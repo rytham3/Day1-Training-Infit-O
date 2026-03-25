@@ -1,0 +1,15 @@
+- .withColumn()
+    - df = df.withColumn(’Column_name’, df.salary + 5000)
+    - Used to select or modify a column
+- .filter()
+    - Used to filter or modify a column
+    - df = df.filter(df.age > 25)
+- .groupBy
+    - Used to aggregate the data
+    - df = df.groupby(’coumn_name1’).sum(’column_name2)
+- .join()
+    - Used to join to dataframes
+    - df = df.join(df2, [df.id](http://df1.id) = df2.id, how=’Inner’)
+- .select()
+    - Used to select columns
+    - df.select(’column’, ‘column’)
