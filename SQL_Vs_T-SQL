@@ -13,11 +13,33 @@
   - We can use vairables, error hannding, if else
 
 
-for example VARIABLES:
+for example 
 
+1. VARIABLES:
+
+"""
 DECLARE @threshold INT = 10000;
 
 SELECT State, SUM(Total) AS total
 FROM suicidesindia_2001_2012
 GROUP BY State
 HAVING SUM(Total) > @threshold;
+"""
+Explaination: Here i declared a variable of integer type and given it the value 10000. Then written a SQL query then used this variable in the HAVING clause to get the desired result.
+
+
+2. IF ELSE CONDITION:
+
+"""
+DECLARE @total INT;
+
+SELECT @total = SUM(total)
+FROM suicidesindia_2001_2012
+
+IF @total > 5000
+	PRINT 'High Suicides'
+ELSE
+	PRINT 'Normal' 
+"""
+
+Explaination: Here i declared a varible named "total" using "@" then i equated it to the value SUM(total) then i performed if else conditions to check if the total is greater than 5000 or not. 
