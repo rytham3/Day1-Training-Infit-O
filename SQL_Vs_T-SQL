@@ -1,0 +1,13 @@
+# SQL 
+  - Structured Query Language
+  - Standard querying langauge used everywhere
+  - For example: MySQL, PostgreSQL
+
+
+
+# T-SQL
+  - Transact SQL
+  - It is an extension of SQL
+  - SQL + Programming features (loops, conditions, variables)
+  - Used in Microsoft SQL server
+  - We can use vairables, error hannding, if else
